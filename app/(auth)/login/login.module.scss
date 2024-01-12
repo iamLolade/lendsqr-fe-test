@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 100%;
+}
+
+.left {
+    width: 100%;
+    padding: 6em;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.right {
+    width: 100%;
+    box-shadow: 0px 15px 90px 0px rgba(0, 0, 0, 0.03);
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Avenir Next;
+
+    .mobileLogo {
+        display: none;
+    }
+
+    div {
+        width: 447px !important;
+    }
+
+    h1 {
+        color: #213F7D;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    p {
+        color: #545F7D;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .form {
+        margin-top: 60px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid rgba(84, 95, 125, 0.15);
+            background: #FFF;
+            padding: 1em;
+            
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: #545F7D;
+            font-size: 0.875em;
+            letter-spacing: 1px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between !important;
+            width: 100%;
+
+            p {
+                color: #39CDCC;
+                font-size: 0.75em;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            height: 48px;
+            color: #FFF;
+            border-radius: 8px;
+            background: #39CDCC;
+            border: none;
+            font-family: Avenir Next;
+            font-size: 0.875em;
+            font-weight: 600;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+  
+
+@media only screen and (max-width: 767px) {
+    /* Your styles for small mobile devices go here */
+    .left {
+        display: none !important;
+    }
+    .right {
+        padding: 2em;
+        width: 100%;
+        display: block;
+
+        .mobileLogo {
+            display: block;
+        }
+
+        div {
+            width: fit-content !important;
+            margin-top: 6em;
+        }
+
+        .form {
+            div {
+                margin: 0;
+            }
+        }
+    }
+}
+  
