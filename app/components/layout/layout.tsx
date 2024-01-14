@@ -9,7 +9,7 @@ interface DashboardWrapperProps {
 
 const DashboardWrapper: React.FC<DashboardWrapperProps> = ({ children }) => {
   return (
-    <div>
+    <div className={styles.layout}>
       <Header />
       <div className={styles.main}>
         <Sidebar />
