@@ -94,6 +94,16 @@
             font-weight: 600;
             letter-spacing: 1.4px;
             text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #028B8A;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            background: #8ADFDE;
         }
     }
 }
@@ -122,6 +132,11 @@
         .form {
             div {
                 margin: 0;
+            }
+            #signup {
+                margin-left: auto !important;
+                float: right !important;
+                text-align: right;
             }
         }
     }
