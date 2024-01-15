@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import styles from './header.module.scss'
 import Image from 'next/image'
@@ -5,11 +7,15 @@ import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-const Header = () => {
+interface HeaderProps {
+  toggleSidebar: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
   return (
     <div className={styles.header}>
       <Image src='/icons/brandLogo.svg' alt='Brand Logo' id={styles.logo} width={144.804} height={30} />
-      <RxHamburgerMenu color='#213F7D' size={28} id={styles.hamburger} />
+      <RxHamburgerMenu color='#213F7D' size={28} id={styles.hamburger} onClick={toggleSidebar} />
       <div className={styles.inputContainer}>
         <input 
           placeholder='Search for anything'
