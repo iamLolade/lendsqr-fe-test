@@ -57,7 +57,25 @@ const page: React.FC = () => {
                 <td>08078903721</td>
                 <td>May 15, 2020 10:00 AM</td>
                 <td>Inactive</td>
-                <td><BsThreeDotsVertical color='#213F7D' size={16} className={styles.options} /></td>
+                <td>
+                  <div className='dropdown' data-toggle="dropdown" id="#action" aria-expanded="false">
+                    <BsThreeDotsVertical color='#213F7D' size={16} className={styles.options} />
+                  </div>
+                  <div className={`dropdown-menu`} id="action">
+                      <div className='p0'>
+                          <div 
+                              className=''
+                          >
+                              View Details
+                          </div>
+                          <div 
+                              className=''
+                          >
+                              Blacklist User
+                          </div>
+                      </div>      
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Lendsqr</td>
