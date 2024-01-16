@@ -117,6 +117,15 @@ const Sidebar: React.FC<SidebarProps> = ({ closeSidebar }) => {
         <Image src='/icons/clipboard-list.svg' alt='icon' width={16} height={16} />
         <p>Audit Logs</p>
       </div>
+      <div className={styles.link}>
+        <Image src='/icons/tire.svg' alt='icon' width={16} height={16} />
+        <p>Systems Messages</p>
+      </div>
+      <div className={styles.line} />
+      <Link href='/login' className={styles.link}>
+        <Image src='/icons/sign-out.svg' alt='icon' width={16} height={16} />
+        <p>Logout</p>
+      </Link>
     </nav>
   )
 }

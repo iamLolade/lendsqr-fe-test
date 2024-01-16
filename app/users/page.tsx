@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import styles from './user.module.scss'
+import styles from './users.module.scss'
 import Image from 'next/image'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import Layout from '../components/layout/Layout'
@@ -66,6 +66,7 @@ const page: React.FC = () => {
                 <td>08078903721</td>
                 <td>May 15, 2020 10:00 AM</td>
                 <td>Inactive</td>
+                <td><BsThreeDotsVertical color='#213F7D' size={16} className={styles.options} /></td>
               </tr>
             </tbody>
           </table>
