@@ -8,6 +8,10 @@
         align-items: center;
         gap: 1em;
 
+        .pointer {
+            cursor: pointer;
+        }
+
         .text {
             color: #545F7D;
             font-size: .85rem;

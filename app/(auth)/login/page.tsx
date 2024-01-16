@@ -61,7 +61,7 @@ const Login = () => {
                         />
                         <div>
                             <p>Forgot password?</p>
-                            <p id='signup'>Sign up</p>
+                            <p id={styles.signup}>Sign up</p>
                         </div>
                         <button 
                             type='submit'
