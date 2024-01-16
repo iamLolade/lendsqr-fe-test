@@ -5,6 +5,7 @@ import Header from '../header/Header';
 import Sidebar from '../sidebar/Sidebar';
 import styles from './layout.module.scss'
 import HamburgerMenu from '../hamburgerMenu/HamburgerMenu';
+import { useRouter } from 'next/router';
 
 interface DashboardWrapperProps {
     children: ReactNode;
@@ -12,6 +13,7 @@ interface DashboardWrapperProps {
 
 const DashboardWrapper: React.FC<DashboardWrapperProps> = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
