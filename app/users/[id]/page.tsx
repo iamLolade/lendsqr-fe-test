@@ -5,17 +5,18 @@ import Wrapper from '../../components/wrapper/Wrapper'
 import styles from './user.module.scss'
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const page = () => {
-    const router = useRouter();
 
     return (
         <Wrapper>
             <div className={styles.container}>
                 <div className={styles.return}>
-                    <HiOutlineArrowNarrowLeft color='#545F7D' size={24} onClick={() => router.push('/users')} className={styles.pointer} />
+                    <Link href='/users'>
+                        <HiOutlineArrowNarrowLeft color='#545F7D' size={24} className={styles.pointer} />
+                    </Link>
                     <p className={styles.text}>Back to Users</p>
                 </div>
                 <div className={styles.header}>
