@@ -91,7 +91,7 @@
             border-radius: 8px;
             background: #39CDCC;
             border: none;
-            font-family: Avenir Next;
+            // font-family: Avenir Next;
             font-size: 0.875em;
             font-weight: 600;
             letter-spacing: 1.4px;
@@ -134,11 +134,10 @@
         .form {
             div {
                 margin: 0;
-            }
-            #signup {
-                margin-left: auto !important;
-                float: right !important;
-                text-align: right;
+
+                #signup {
+                    display: none !important;
+                }
             }
         }
     }
