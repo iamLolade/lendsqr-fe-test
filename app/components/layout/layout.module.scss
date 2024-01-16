@@ -1,0 +1,21 @@
+.layout {
+    width: 100vw;
+    height: 100vh !important;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for small mobile devices go here */
+@media only screen and (max-width: 767px) {
+
+    .sidebar {
+        display: none;
+    }
+
+}

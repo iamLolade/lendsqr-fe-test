@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Press+Start+2P&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primaryColor: #213F7D;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your styles for small mobile devices go here */
+  html, body {
+    font-size: 14px !important;
+  }
 }

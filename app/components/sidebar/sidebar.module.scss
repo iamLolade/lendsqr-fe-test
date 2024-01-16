@@ -1,0 +1,139 @@
+.sidebar {
+    width: 19vw !important;
+    // max-height: 100vh;
+    max-height: 92.7vh !important;
+    overflow-y: scroll !important;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.04);
+    padding-bottom: 3em;
+
+    .header {
+        display: none;
+    }
+
+    .switch {
+        display: flex;
+        align-items: center;
+        gap: .8em;
+        margin: 2em;
+        margin-bottom: 3em;
+        cursor: pointer;
+
+        p {
+            font-size: 1rem;
+            color: var(--primaryColor);
+            font-size: 0.88rem;
+            font-weight: 400;
+        }
+
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: .8em;
+        margin-bottom: .5em;
+        padding: .7em;
+        padding-inline: 2em;
+        opacity: 0.6;
+        cursor: pointer;
+        text-decoration: none;
+
+        p {
+            font-size: 1rem;
+            color: var(--primaryColor);
+            font-size: 0.88rem;
+            font-weight: 400;
+        }
+    }
+
+    .link:hover {
+        opacity: 1;
+        background: #39cdcd16;
+    }
+
+    .active {
+        opacity: 1;
+        background: #39cdcd16;
+        border-left: 3px solid #39CDCC;
+    }
+
+    .menu {
+        color: #545F7D;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 2em;
+        margin-top: 41px;
+        margin-bottom: 10px;
+    }
+
+    .line {
+        border: .3px solid #545f7d24;
+        width: 100%;
+        margin-top: 5em;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+    width: 3px !important;
+}
+  
+  
+.sidebar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+}
+  
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+  
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Thumb color on hover */
+}
+
+/* Styles for small mobile devices go here */
+@media only screen and (max-width: 767px) {
+
+    .sidebar {
+        position: relative;
+        width: 70vw !important;
+        max-height: 100vh !important;
+        top: 0;
+        left: 0;
+        z-index: 3 !important;
+        transition: transform 0.3s ease;
+        background: #fff;
+
+        .header {
+            display: block;
+            padding: 2em;
+            padding-top: 2em;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.04);
+            position: sticky !important;
+        }
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+  
+  
