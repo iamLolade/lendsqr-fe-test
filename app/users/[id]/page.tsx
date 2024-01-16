@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout/Layout'
+import Wrapper from '../../components/wrapper/Wrapper'
 import styles from './user.module.scss'
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const page = () => {
   return (
-    <Layout>
+    <Wrapper>
         <div className={styles.container}>
             <div className={styles.return}>
                 <HiOutlineArrowNarrowLeft color='#545F7D' size={24} />
@@ -31,7 +31,7 @@ const page = () => {
                 </div>
             </div>
         </div>
-    </Layout>
+    </Wrapper>
   )
 }
 

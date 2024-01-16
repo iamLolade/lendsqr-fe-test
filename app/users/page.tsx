@@ -4,11 +4,11 @@ import React from 'react'
 import styles from './users.module.scss'
 import Image from 'next/image'
 import { BsThreeDotsVertical } from 'react-icons/bs'
-import Layout from '../components/layout/Layout'
+import Wrapper from '../components/wrapper/Wrapper'
 
 const page: React.FC = () => {
   return (
-    <Layout>
+    <Wrapper>
       <div className={styles.container}>
         <p className={styles.title}>
           Users
@@ -90,7 +90,7 @@ const page: React.FC = () => {
           </table>
         </div>
       </div>
-    </Layout>
+    </Wrapper>
   )
 }
 

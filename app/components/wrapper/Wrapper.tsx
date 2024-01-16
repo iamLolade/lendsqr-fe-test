@@ -11,7 +11,7 @@ interface DashboardWrapperProps {
     children: ReactNode;
 }
 
-const DashboardWrapper: React.FC<DashboardWrapperProps> = ({ children }) => {
+const Wrapper: React.FC<DashboardWrapperProps> = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
 
@@ -37,4 +37,4 @@ const DashboardWrapper: React.FC<DashboardWrapperProps> = ({ children }) => {
   )
 }
 
-export default DashboardWrapper
+export default Wrapper;

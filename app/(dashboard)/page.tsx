@@ -1,14 +1,14 @@
 'use client'
 
 import styles from './dashboard.module.scss';
-import Layout from '../components/layout/Layout';
+import Wrapper from '../components/wrapper/Wrapper';
 import Image from 'next/image';
 import { IoIosArrowUp } from "react-icons/io";
 
 export default function Home() {
 
   return (
-    <Layout>
+    <Wrapper>
       <div className={styles.container}>
         <p className={styles.title}>
           Dashboard
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Layout>
+    </Wrapper>
   )
 }
 
